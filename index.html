@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Idea Video Pendek AI ? Generator</title>
+    <meta name="description" content="Jana idea video pendek AI (TikTok/Reels/Shorts) yang padu dengan hook, struktur, visual, audio, CTA dan hashtag ? dalam Bahasa Melayu." />
+    <meta property="og:title" content="Idea Video Pendek AI ? Generator" />
+    <meta property="og:description" content="Jana idea video pendek AI (TikTok/Reels/Shorts) yang padu dalam BM." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="container page-header">
+      <div class="brand">
+        <div class="logo">??</div>
+        <div>
+          <h1>AI Short Video Idea</h1>
+          <p class="muted">Jana idea BM untuk TikTok, Reels, Shorts</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="shareApp" class="btn ghost">Kongsi App</button>
+        <a href="https://agentic-fb9c4acf.vercel.app" class="btn ghost" target="_blank" rel="noopener">Live</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Keutamaan</h2>
+        <div class="grid form-grid">
+          <label class="field">
+            <span>Platform</span>
+            <select id="platform">
+              <option value="TikTok">TikTok</option>
+              <option value="Reels">Instagram Reels</option>
+              <option value="Shorts" selected>YouTube Shorts</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Durasi</span>
+            <select id="duration">
+              <option value="15">15s</option>
+              <option value="30" selected>30s</option>
+              <option value="60">60s</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Gaya/Tona</span>
+            <select id="tone">
+              <option value="santai">Santai</option>
+              <option value="berinformasi" selected>Berinformasi</option>
+              <option value="humor">Humor</option>
+              <option value="motivasi">Motivasi</option>
+              <option value="drama">Drama</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Niche</span>
+            <select id="niche">
+              <option value="pendidikan">Pendidikan AI</option>
+              <option value="produktivitI">Produktiviti</option>
+              <option value="bisnes">Bisnes & Marketing</option>
+              <option value="coding">Coding & Tech</option>
+              <option value="gaya hidup">Gaya Hidup</option>
+              <option value="content">Content Creation</option>
+            </select>
+          </label>
+          <label class="field span-2">
+            <span>Kata Kunci Trend (opsyenal)</span>
+            <input id="trends" type="text" placeholder="Contoh: Sora, Gemini Flash, GPT-4.1, CapCut template" />
+            <small class="muted">Pisahkan dengan koma. Tekan "+ Auto-trend" untuk isi cadangan.</small>
+          </label>
+        </div>
+        <div class="row actions">
+          <div class="left">
+            <button id="autoTrend" class="btn ghost">+ Auto-trend</button>
+          </div>
+          <div class="right">
+            <button id="generateList" class="btn primary">Jana 10 Idea</button>
+            <button id="generateScript" class="btn">Jana Skrip Penuh</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="results-header">
+          <h2>Hasil</h2>
+          <div class="right">
+            <button id="copyAll" class="btn ghost">Salin Semua</button>
+            <button id="exportTxt" class="btn ghost">Eksport .txt</button>
+          </div>
+        </div>
+        <div id="results" class="results-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="panel subtle">
+        <h3>Tips cepat untuk banyak tontonan</h3>
+        <ul class="tips">
+          <li><strong>Hook 3s:</strong> mula dengan janji/persoalan tajam.</li>
+          <li><strong>Visual pantas:</strong> potong setiap 1?2s, tambah teks skrin.</li>
+          <li><strong>CTA jelas:</strong> arahkan 1 tindakan sahaja (follow/komentar/DM).</li>
+          <li><strong>Uji 3 variasi:</strong> hook, teks skrin, thumbnail.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container page-footer">
+      <span>? 2025 Idea AI ? BM-first</span>
+      <a href="https://vercel.com" target="_blank" rel="noopener" class="muted">Dikuasakan oleh Vercel</a>
+    </footer>
+
+    <script src="/script.js" type="module"></script>
+  </body>
+</html>
